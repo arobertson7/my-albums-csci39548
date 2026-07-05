@@ -1,75 +1,12 @@
-# React + TypeScript + Vite
+# My Albums
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to our My Albums web application! This project was built to demonstrate asynchronous server state management, dynamic client-side routing, responsive utility-first layouts, and mock REST database synchronization workflows.
 
-Currently, two official plugins are available:
+The application is a clean personal music catalog tracker featuring:
+- **React Router Navigation:** Manages client-side routing with nested layout wrappers, parameter-driven category grids, single-album profile views, and fallback 404 routing.
+- **TanStack Query Synchronization:** Coordinates asynchronous data fetching, localized caching, and automated mutations with cache invalidation rules to trigger instant list refetches.
+- **JSON Server Mock Database:** Runs a local RESTful API server powered by `db.json` and `db.seed.json` templates to store tracking logs, ratings, and notes.
+- **Theme Mode Customization:** Incorporates a dark/light theme switch that integrates seamlessly with Tailwind utility styles and persists user preferences in `localStorage`.
+- **Interactive Crate Reviews:** Supports status tracking (want, active, done, dropped), live star ratings (with hover indicators), and customizable review notes with auto-saving textareas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+It is built using React, Vite, TypeScript, and Tailwind CSS (powered by TanStack Query for state sync, React Router for client-side view management, and json-server for local database storage).
