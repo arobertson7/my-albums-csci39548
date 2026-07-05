@@ -1,0 +1,244 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Even In Arcadia",
+      "creator": "Sleep Token",
+      "year": 2025,
+      "genre": "Metal",
+      "status": "done",
+      "rating": 5,
+      "note": "Play on repeat"
+    },
+    {
+      "id": 2,
+      "title": "Take Me Back To Eden",
+      "creator": "Sleep Token",
+      "year": 2023,
+      "genre": "Metal",
+      "status": "done",
+      "rating": 5,
+      "note": "Masterpiece production"
+    },
+    {
+      "id": 3,
+      "title": "The Car",
+      "creator": "Arctic Monkeys",
+      "year": 2022,
+      "genre": "Indie/Alternative",
+      "status": "done",
+      "rating": 4,
+      "note": "Great lounge vibe"
+    },
+    {
+      "id": 4,
+      "title": "AM",
+      "creator": "Arctic Monkeys",
+      "year": 2013,
+      "genre": "Indie/Alternative",
+      "status": "active",
+      "rating": 5,
+      "note": "A modern classic"
+    },
+    {
+      "id": 5,
+      "title": "In Rainbows",
+      "creator": "Radiohead",
+      "year": 2007,
+      "genre": "Indie/Alternative",
+      "status": "done",
+      "rating": 5,
+      "note": "Perfect album"
+    },
+    {
+      "id": 6,
+      "title": "OK Computer",
+      "creator": "Radiohead",
+      "year": 1997,
+      "genre": "Indie/Alternative",
+      "status": "active",
+      "rating": 5,
+      "note": "Essential listening"
+    },
+    {
+      "id": 7,
+      "title": "Meteora",
+      "creator": "Linkin Park",
+      "year": 2003,
+      "genre": "Rock",
+      "status": "done",
+      "rating": 5,
+      "note": "Nostalgic and flawless"
+    },
+    {
+      "id": 8,
+      "title": "Hybrid Theory",
+      "creator": "Linkin Park",
+      "year": 2000,
+      "genre": "Rock",
+      "status": "want",
+      "rating": null,
+      "note": "Need to re-listen soon"
+    },
+    {
+      "id": 9,
+      "title": "Dark Side of the Moon",
+      "creator": "Pink Floyd",
+      "year": 1973,
+      "genre": "Rock",
+      "status": "done",
+      "rating": 5,
+      "note": "Timeless masterpiece"
+    },
+    {
+      "id": 10,
+      "title": "Wish You Were Here",
+      "creator": "Pink Floyd",
+      "year": 1975,
+      "genre": "Rock",
+      "status": "active",
+      "rating": 5,
+      "note": "Incredible guitar work"
+    },
+    {
+      "id": 11,
+      "title": "Sempiternal",
+      "creator": "Bring Me The Horizon",
+      "year": 2013,
+      "genre": "Metal",
+      "status": "done",
+      "rating": 5,
+      "note": "Massive riffs"
+    },
+    {
+      "id": 12,
+      "title": "Post Human: Nex Gen",
+      "creator": "Bring Me The Horizon",
+      "year": 2024,
+      "genre": "Metal",
+      "status": "want",
+      "rating": null,
+      "note": "Hear great things about the production"
+    },
+    {
+      "id": 13,
+      "title": "Rumours",
+      "creator": "Fleetwood Mac",
+      "year": 1977,
+      "genre": "Rock",
+      "status": "done",
+      "rating": 5,
+      "note": "Zero skips"
+    },
+    {
+      "id": 14,
+      "title": "Sam's Town",
+      "creator": "The Killers",
+      "year": 2006,
+      "genre": "Indie/Alternative",
+      "status": "dropped",
+      "rating": 3,
+      "note": "Preferred Hot Fuss honestly"
+    },
+    {
+      "id": 15,
+      "title": "Hot Fuss",
+      "creator": "The Killers",
+      "year": 2004,
+      "genre": "Indie/Alternative",
+      "status": "active",
+      "rating": 4,
+      "note": "Classic indie rock sound"
+    },
+    {
+      "id": 16,
+      "title": "Currents",
+      "creator": "Tame Impala",
+      "year": 2015,
+      "genre": "Indie/Alternative",
+      "status": "active",
+      "rating": 5,
+      "note": "Incredible solo project textures"
+    },
+    {
+      "id": 17,
+      "title": "Lonerism",
+      "creator": "Tame Impala",
+      "year": 2012,
+      "genre": "Indie/Alternative",
+      "status": "want",
+      "rating": null,
+      "note": "Need to check out his earlier psych-rock style"
+    },
+    {
+      "id": 18,
+      "title": "Master of Puppets",
+      "creator": "Metallica",
+      "year": 1986,
+      "genre": "Metal",
+      "status": "dropped",
+      "rating": 4,
+      "note": "Songs are a bit too long for casual listening"
+    },
+    {
+      "id": 19,
+      "title": "Black Album",
+      "creator": "Metallica",
+      "year": 1991,
+      "genre": "Metal",
+      "status": "dropped",
+      "rating": 3,
+      "note": "A bit too commercialized"
+    },
+    {
+      "id": 20,
+      "title": "Back In Black",
+      "creator": "AC/DC",
+      "year": 1980,
+      "genre": "Rock",
+      "status": "want",
+      "rating": null,
+      "note": "Essential rock history gap to fill"
+    },
+    {
+      "id": 21,
+      "title": "Rust in Peace",
+      "creator": "Megadeth",
+      "year": 1990,
+      "genre": "Metal",
+      "status": "active",
+      "rating": 5,
+      "note": "Peak thrash metal guitar work"
+    },
+    {
+      "id": 22,
+      "title": "Countdown to Extinction",
+      "creator": "Megadeth",
+      "year": 1992,
+      "genre": "Metal",
+      "status": "want",
+      "rating": null,
+      "note": null
+    },
+    {
+      "id": 23,
+      "title": "Turn On the Bright Lights",
+      "creator": "Interpol",
+      "year": 2002,
+      "genre": "Indie/Alternative",
+      "status": "done",
+      "rating": 5,
+      "note": "Incredible NYC atmosphere"
+    },
+    {
+      "id": 24,
+      "title": "Antics",
+      "creator": "Interpol",
+      "year": 2004,
+      "genre": "Indie/Alternative",
+      "status": "dropped",
+      "rating": 3,
+      "note": "Good, but didn't hook me like the debut"
+    }
+  ]
+}
