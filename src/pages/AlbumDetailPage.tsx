@@ -103,7 +103,7 @@ export default function AlbumDetailPage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-4 space-y-8 animate-fade-in">
+    <div className="max-w-4xl mx-auto py-4 compact:py-2 space-y-8 compact:space-y-4 animate-fade-in">
       {/* Back navigation */}
       <div>
         <Link
@@ -115,12 +115,12 @@ export default function AlbumDetailPage() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 compact:gap-6 items-center">
         {/* Left Column: Interactive Vinyl Album Art */}
         <div className="flex items-center justify-center p-4">
-          <div className="relative group w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 select-none">
+          <div className="relative group w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 compact:w-52 compact:h-52 compact:sm:w-60 compact:sm:h-60 compact:lg:w-64 compact:lg:h-64 select-none">
             {/* The Black Vinyl Record (slides out on hover) */}
-            <div className="absolute inset-y-0 right-0 w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-slate-900 rounded-full flex items-center justify-center border-4 border-slate-950 transition-all duration-700 ease-out translate-x-0 group-hover:translate-x-14 md:group-hover:translate-x-20 shadow-2xl z-0">
+            <div className="absolute inset-y-0 right-0 w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 compact:w-52 compact:h-52 compact:sm:w-60 compact:sm:h-60 compact:lg:w-64 compact:lg:h-64 bg-slate-900 rounded-full flex items-center justify-center border-4 border-slate-950 transition-all duration-700 ease-out translate-x-0 group-hover:translate-x-14 md:group-hover:translate-x-20 compact:group-hover:translate-x-10 compact:md:group-hover:translate-x-14 shadow-2xl z-0">
               {/* Vinyl grooves */}
               <div className="absolute inset-4 rounded-full border border-slate-800/30"></div>
               <div className="absolute inset-8 rounded-full border border-slate-800/30"></div>
@@ -129,7 +129,7 @@ export default function AlbumDetailPage() {
               <div className="absolute inset-20 rounded-full border border-slate-800/30"></div>
               <div className="absolute inset-24 rounded-full border border-slate-800/30"></div>
               {/* Center record label */}
-              <div className={`w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full bg-gradient-to-br ${getCoverGradient(album.id)} flex items-center justify-center p-2.5 text-center text-[7px] sm:text-[9px] text-white font-bold uppercase tracking-wider overflow-hidden shadow-inner`}>
+              <div className={`w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 compact:w-16 compact:h-16 compact:sm:w-20 compact:sm:h-20 compact:lg:w-24 compact:lg:h-24 rounded-full bg-gradient-to-br ${getCoverGradient(album.id)} flex items-center justify-center p-2.5 text-center text-[7px] sm:text-[9px] text-white font-bold uppercase tracking-wider overflow-hidden shadow-inner`}>
                 <span className="line-clamp-2 drop-shadow-sm">{album.title}</span>
               </div>
               {/* Spindle hole */}
@@ -137,7 +137,7 @@ export default function AlbumDetailPage() {
             </div>
 
             {/* Premium Album Sleeve Cover (stays on top) */}
-            <div className={`relative z-10 w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl bg-gradient-to-br ${getCoverGradient(album.id)} shadow-2xl flex flex-col justify-between p-6 sm:p-8 text-white font-extrabold uppercase border border-white/10`}>
+            <div className={`relative z-10 w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 compact:w-52 compact:h-52 compact:sm:w-60 compact:sm:h-60 compact:lg:w-64 compact:lg:h-64 rounded-2xl bg-gradient-to-br ${getCoverGradient(album.id)} shadow-2xl flex flex-col justify-between p-6 sm:p-8 compact:p-4 text-white font-extrabold uppercase border border-white/10`}>
               <div className="flex justify-between items-start">
                 <span className="text-[10px] tracking-widest bg-white/10 backdrop-blur-md px-2.5 py-1 rounded-full">{album.genre}</span>
                 <span className="text-xs tracking-wider opacity-75">{album.year}</span>
@@ -151,7 +151,7 @@ export default function AlbumDetailPage() {
         </div>
 
         {/* Right Column: Album Details & Tracker Controls */}
-        <div className="space-y-6">
+        <div className="space-y-6 compact:space-y-4">
           <div className="space-y-2">
             <span className={`inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider ${badge.classes}`}>
               {badge.label}
@@ -168,7 +168,7 @@ export default function AlbumDetailPage() {
           <hr className="border-slate-200 dark:border-slate-800" />
 
           {/* Controls section */}
-          <div className="space-y-5">
+          <div className="space-y-5 compact:space-y-3">
             {/* Status Pills */}
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">

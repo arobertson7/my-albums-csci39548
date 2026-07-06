@@ -21,6 +21,26 @@ export default function Layout() {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
+  const [density, setDensity] = useState<'comfortable' | 'compact'>(() => {
+    const saved = localStorage.getItem('density');
+    if (saved === 'comfortable' || saved === 'compact') return saved;
+    return 'comfortable';
+  });
+
+  useEffect(() => {
+    if (density === 'compact') {
+      document.documentElement.classList.add('compact');
+    } else {
+      document.documentElement.classList.remove('compact');
+    }
+    localStorage.setItem('density', density);
+  }, [density]);
+
+  const toggleDensity = () => {
+    setDensity((prev) => (prev === 'comfortable' ? 'compact' : 'comfortable'));
+  };
+
+
   const navItems = [
     { to: '/', label: 'Catalog' },
     { to: '/list/want', label: 'Want to Listen' },
@@ -57,7 +77,31 @@ export default function Layout() {
             </nav>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Density Toggle Button */}
+            <button
+              onClick={toggleDensity}
+              className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer border border-slate-200/50 dark:border-slate-700/50 hover:scale-105 active:scale-95 text-xs font-bold uppercase tracking-wider flex items-center gap-1"
+              aria-label="Toggle layout density"
+            >
+              {density === 'comfortable' ? (
+                <>
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                  <span className="hidden sm:inline text-[10px] tracking-wide">Comfortable</span>
+                </>
+              ) : (
+                <>
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-600 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 5h16M4 9h16M4 13h16M4 17h16M4 21h16" />
+                  </svg>
+                  <span className="hidden sm:inline text-[10px] tracking-wide text-indigo-600 dark:text-indigo-400">Compact</span>
+                </>
+              )}
+            </button>
+
+            {/* Theme Toggle Button */}
             <button
               onClick={toggleTheme}
               className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer border border-slate-200/50 dark:border-slate-700/50 hover:scale-105 active:scale-95"
