@@ -52,8 +52,8 @@ npm run reset-db
 
 ## Screenshots
 
-### Catalog Dashboard (Dark Mode)
-![Catalog Grid View](./screenshots/catalog_view.png)
+### Catalog Dashboard
+![Catalog Page](./screenshots/catalog_page.jpeg)
 
-### Album Detail & Interactive Crate Reviews
-![Album Detail View](./screenshots/detail_view.png)
+### Album Detail & Interactive Reviews
+![Album Detail Page](./screenshots/album_detail_page.jpg)
