@@ -37,8 +37,8 @@
       "year": 2013,
       "genre": "Indie/Alternative",
       "status": "active",
-      "rating": 3,
-      "note": "efjwoi"
+      "rating": 5,
+      "note": "A modern classic"
     },
     {
       "id": 5,
@@ -56,9 +56,9 @@
       "creator": "Radiohead",
       "year": 1997,
       "genre": "Indie/Alternative",
-      "status": "want",
-      "rating": null,
-      "note": "Essential listening wejfierfawoe;rferrefesrewfe"
+      "status": "active",
+      "rating": 5,
+      "note": "Essential listening"
     },
     {
       "id": 7,
