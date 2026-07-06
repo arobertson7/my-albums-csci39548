@@ -88,7 +88,7 @@ export default function CatalogPage() {
   }
 
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="space-y-8 compact:space-y-4 animate-fade-in">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="space-y-1">
           <h1 className="text-3xl font-extrabold tracking-tight">Music Catalog</h1>
@@ -126,9 +126,9 @@ export default function CatalogPage() {
 
       {isLoading ? (
         /* Loading Skeletons */
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 compact:gap-4">
           {Array.from({ length: 8 }).map((_, idx) => (
-            <div key={idx} className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 space-y-4 animate-pulse">
+            <div key={idx} className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 compact:p-3 space-y-4 compact:space-y-3 animate-pulse">
               <div className="aspect-square w-full rounded-xl bg-slate-200 dark:bg-slate-800" />
               <div className="space-y-2">
                 <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-3/4" />
@@ -155,17 +155,17 @@ export default function CatalogPage() {
         </div>
       ) : (
         /* Albums Grid */
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 compact:gap-4">
           {filteredAlbums.map((album) => {
             const badge = getStatusBadge(album.status);
             return (
               <Link
                 key={album.id}
                 to={`/items/${album.id}`}
-                className="group flex flex-col bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                className="group flex flex-col bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl p-4 compact:p-3 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
               >
                 {/* Simulated Vinyl Record Sleeve Cover */}
-                <div className="relative aspect-square w-full rounded-xl overflow-hidden mb-4 bg-slate-100 dark:bg-slate-950 flex items-center justify-center">
+                <div className="relative aspect-square w-full rounded-xl overflow-hidden mb-4 compact:mb-3 bg-slate-100 dark:bg-slate-950 flex items-center justify-center">
                   {/* Vinyl slip-out effect */}
                   <div className="absolute inset-0 bg-gradient-to-br opacity-90 dark:opacity-85 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center text-white font-extrabold text-2xl select-none shadow-inner border border-white/10 dark:border-white/5 rounded-xl block z-10 overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${getCoverGradient(album.id)}`} />
@@ -194,7 +194,7 @@ export default function CatalogPage() {
                   </div>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2">
+                <div className="mt-4 compact:mt-3 pt-3 compact:pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2">
                   <span className={`inline-flex items-center px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider ${badge.classes}`}>
                     {badge.label}
                   </span>
